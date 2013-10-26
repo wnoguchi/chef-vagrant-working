@@ -1,4 +1,4 @@
-# Chef Solo and Vagrant Work-Rrepo
+# Chef Solo and Vagrant Work-repo
 
 Chef SoloとVagrantの勉強用のリポジトリです。
 
