@@ -1,1 +1,9 @@
-{"run_list":["recipe[hello]"]}
+{
+  "nginx": {
+    "port": 80
+  }
+  "run_list":[
+    "recipe[yum::epel]"
+    "recipe[setup]"
+  ]
+}
