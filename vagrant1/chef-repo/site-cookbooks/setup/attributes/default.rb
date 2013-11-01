@@ -1,2 +1,2 @@
 
-node[:nginx][:port] = 8080
+default[:nginx][:port] = 8080

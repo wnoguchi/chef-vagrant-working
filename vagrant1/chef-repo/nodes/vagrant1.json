@@ -1,6 +1,6 @@
 {
   "nginx": {
-    "port": 80
+//    "port": 9999
   },
   "run_list":[
     "recipe[yum::epel]",

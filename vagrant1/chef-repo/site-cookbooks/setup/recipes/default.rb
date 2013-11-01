@@ -8,9 +8,9 @@
 #
 
 log "setup recipe"
+log "nginx port #{node[:nginx][:port]} specified."
 
 package "nginx" do
-  port node[:nginx][:port]
   action :install
 end
 
