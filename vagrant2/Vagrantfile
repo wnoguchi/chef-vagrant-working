@@ -115,4 +115,35 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+
+  config.vm.define :vm1 do |cfg|
+    cfg.vm.box = "base"
+    cfg.vm.network :private_network, ip: "192.168.30.10"
+    cfg.vm.host_name = "vm1"
+  end
+
+  config.vm.define :vm2 do |cfg|
+    cfg.vm.box = "base"
+    cfg.vm.network :private_network, ip: "192.168.30.11"
+    cfg.vm.host_name = "vm2"
+  end
+
+  config.vm.define :vm3 do |cfg|
+    cfg.vm.box = "base"
+    cfg.vm.network :private_network, ip: "192.168.30.12"
+    cfg.vm.host_name = "vm3"
+  end
+
+  config.vm.define :vm4 do |cfg|
+    cfg.vm.box = "base"
+    cfg.vm.network :private_network, ip: "192.168.30.13"
+    cfg.vm.host_name = "vm4"
+  end
+
+  config.vm.define :vm5 do |cfg|
+    cfg.vm.box = "base"
+    cfg.vm.network :private_network, ip: "192.168.30.14"
+    cfg.vm.host_name = "vm5"
+  end
+
 end
