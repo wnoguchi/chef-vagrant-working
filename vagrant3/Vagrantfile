@@ -120,7 +120,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.enabled = true
 
   config.vm.provision :chef_solo do |chef|
-    chef.run_list = ["hello"]
+    chef.run_list = [
+      "hello",
+      "mysql::client",
+      "mysql::server",
+    ]
+
+    chef.json = {
+      mysql: {
+        server_root_password: "testtest",
+        server_repl_password: "testtest",
+        server_debian_password: "testtest",
+        bind_address: "127.0.0.1"
+      }
+    }
   end
 
 end
