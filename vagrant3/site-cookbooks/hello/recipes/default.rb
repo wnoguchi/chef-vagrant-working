@@ -6,3 +6,6 @@
 # 
 # All rights reserved - Do Not Redistribute
 #
+
+log "Hello, Vagrant and Chef solo!"
+
