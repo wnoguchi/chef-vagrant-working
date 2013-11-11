@@ -8,6 +8,7 @@ Chef SoloとVagrantの勉強用のリポジトリです。
 * ruby 1.9.3
 * rbenv
 * bundler
+* Berkshelf
 
 このリポジトリをクローンしたらまず以下のことをやらなければなりません。
 
